@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import '/Users/prsaha/workspace/FE/react/tutorial-03-component/src/App.css';
+import Instructions  from '/Users/prsaha/workspace/FE/react/tutorial-03-component/src/Instruction.js'
+
+const displayEmojiName = event => alert(event.target.id);
+const emojis = [
+  {
+    emoji: '😀',
+    name: "test grinning face"
+  },
+  {
+    emoji: '🎉',
+    name: "party popper"
+  },
+  {
+    emoji: '💃',
+    name: "woman dancing"
+  }
+];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const greeting = "greeting";
+  const displayAction = false;
+  return(
+      <Instructions />
+  )
 }
 
 export default App;
