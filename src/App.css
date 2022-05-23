@@ -1,36 +1,29 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-button {
-  font-size: 2em;
-  border: 0;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
-
-ul {
-  display: flex;
-  padding: 0;
+.App{
+  text-align:center
 }
 
 li {
-  margin: 0 20px;
-  list-style: none;
-  padding: 0;
+  list-style: none
 }
 
-.instructions {
+.container{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.instructions img {
-  width: 100px;
-  height: 100px;
+.container > li {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
+.skills{
+  display: flex;
+}
+
+.skills > li{
+  text-align: center;
+  padding: 0.2rem;
+}
